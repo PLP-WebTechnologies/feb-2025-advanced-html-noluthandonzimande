@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    table, th, td {
+      border: 1px solid #000;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+    form {
+      margin-top: 30px;
+    }
+    fieldset {
+      margin-top: 20px;
+      padding: 15px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body bgcolor="teal" text="black" link="white" vlink="white">
+
+  <!-- Ordered list with Roman numerals -->
+  <section>
+    <h2>Steps to Register</h2>
+    <ol type="I">
+      <li>Fill out the form</li>
+      <li>Verify your email</li>
+      <li>Agree to terms</li>
+      <li>Submit</li>
+    </ol>
+  </section>
+
+  <!-- External image from Pexels -->
+  <section>
+    <h2>Sample Image</h2>
+    <img src="pexels.jpg" alt="Museum" width="800" />
+  </section>
+
+  <!-- Table of contacts -->
+  <section>
+    <h2>Contact List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Mobile</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Noluthando Ayanda</td>
+          <td>123 Main St</td>
+          <td>+27 61 234 5678</td>
+          <td>thando@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Buhle Zondo</td>
+          <td>456 Oak Ave</td>
+          <td>+27 72 345 6789</td>
+          <td>buhleZ@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Cindi Makhathini</td>
+          <td>789 Pine Rd</td>
+          <td>+27 83 456 7890</td>
+          <td>cindi78@gmail.com</td>
+        </tr>
+        <tr>
+          <td>David Lee</td>
+          <td>101 Cedar Blvd</td>
+          <td>+27 84 567 8901</td>
+          <td>david@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Emihle Walaza</td>
+          <td>202 Birch Ln</td>
+          <td>+27 85 678 9012</td>
+          <td>emihle@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Registration Form -->
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="POST">
+      <fieldset>
+        <legend>Register Here</legend>
+
+        <!-- Name Field -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+
+        <!-- Email Field -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required />
+
+        <!-- Password Field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Choose a password" minlength="6" required />
+
+        <!-- Date Field -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <!-- Dropdown -->
+        <label for="role">Select Role:</label>
+        <select id="role" name="role" required>
+          <option value="">--Please choose an option--</option>
+          <option value="student">Student</option>
+          <option value="tourist">Tourist</option>
+          <option value="Artist">Artist</option>
+        </select>
+
+        <!-- Radio Buttons -->
+        <p>Gender:</p>
+        <label><input type="radio" name="gender" value="male" required /> Male</label>
+        <label><input type="radio" name="gender" value="female" /> Female</label>
+        <label><input type="radio" name="gender" value="other" /> Other</label>
+
+        <!-- Checkboxes -->
+        <p>Interests:</p>
+        <label><input type="checkbox" name="interests" value="coding" /> Coding</label>
+        <label><input type="checkbox" name="interests" value="design" /> Design</label>
+        <label><input type="checkbox" name="interests" value="gaming" /> Gaming</label>
+
+        <!-- Submit Button -->
+        <br><br>
+        <button type="submit">Register</button>
+      </fieldset>
+    </form>
+  </section>
+
+</body>
+</html>
